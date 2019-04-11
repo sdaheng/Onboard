@@ -179,6 +179,10 @@ static CGFloat const kMainPageControlHeight = 35;
     // create the image view with the appropriate image, size, and center in on screen
     _imageView = [[UIImageView alloc] initWithImage:_image];
     [_imageView setFrame:CGRectMake(horizontalCenter - (self.iconWidth / 2), self.topPadding, self.iconWidth, self.iconHeight)];
+    if (self.centerIconImageView) {
+        _imageView.center = self.view.center;
+    }
+    
     [self.view addSubview:_imageView];
     
     // create and configure the main text label sitting underneath the icon with the provided padding

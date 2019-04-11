@@ -42,6 +42,8 @@
 @property (nonatomic, strong) NSString *buttonFontName;
 @property (nonatomic) CGFloat buttonFontSize;
 
+@property (nonatomic, assign) BOOL centerIconImageView;
+
 @property (nonatomic) CGFloat topPadding;
 @property (nonatomic) CGFloat underIconPadding;
 @property (nonatomic) CGFloat underTitlePadding;
